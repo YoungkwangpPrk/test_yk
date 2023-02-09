@@ -1,0 +1,14 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  profiles:
+    include: mysql
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: 8999
+mybatis:
+  mapper-locations: mapper/*.xml
