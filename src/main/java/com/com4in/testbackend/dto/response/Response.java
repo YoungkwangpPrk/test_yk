@@ -19,6 +19,7 @@ public class Response {
     }
 
     public static <T> Response success(T data) {
+        System.out.println("ldshjflsdhlsdk");
         return new Response(true, 0, new Success<>(data));
     }
 
